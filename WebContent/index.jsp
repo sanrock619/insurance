@@ -15,27 +15,8 @@
 <!-- open-iconic css -->
 <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 
-<!-- Custom styles for this template -->
-<style>
-body {
-	padding-top: 54px;
-}
-
-@media ( min-width : 992px) {
-	body {
-		padding-top: 56px;
-	}
-}
-
-.product {
-	padding-bottom: 5%;
-}
-
-.product-header{
-	color:white;
-	background-color: #4682B4;
-}
-</style>
+<!-- Custom styles for this project -->
+<link href="vendor/bootstrap/css/ins.css" rel="stylesheet">
 
 </head>
 
@@ -58,8 +39,11 @@ body {
 					<li class="nav-item"><a class="nav-link" href="calculate.jsp">
 					<span class="oi oi-calculator" aria-hidden="true"></span>試算保費</a>
 					</li>
+					<li class="nav-item"><a class="nav-link" href="apply.jsp">
+					<span class="oi oi-cart" aria-hidden="true"></span>保險商品</a>
+					</li>
 					<li class="nav-item"><a class="nav-link" href="member.jsp">
-					<span class="oi oi-file" aria-hidden="true"></span>保戶園地</a>
+					<span class="oi oi-person" aria-hidden="true"></span>保戶園地</a>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="register.jsp">
 					<span class="oi oi-tag" aria-hidden="true"></span>註冊會員</a>
@@ -85,18 +69,7 @@ body {
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<h1 class="mt-5">歡迎使用24HR網路投保平台</h1>
-<!-- 				<p class="lead">簡單4步驟完成投保</p> -->
-				<!--           <ul class="list-unstyled"> -->
-				<!--             <li>1. 註冊並登入會員</li> -->
-				<!--             <li>2. 挑選投保的商品</li> -->
-				<!--             <li>3. 填寫資料並確認</li> -->
-				<!--             <li>4. 付款後獲得保障</li> -->
-				<!--           </ul> -->
-				<!--           <a class="btn btn-info" href="calculate.jsp" role="button">試算保費</a>&nbsp;&nbsp; -->
-				<!-- 		  <a class="btn btn-primary" href="register.jsp" role="button">註冊會員</a>&nbsp;&nbsp; -->
-				<!-- 		  <a class="btn btn-success" href="login.jsp" role="button">登入會員</a> -->
-				<!-- 		  <span class="oi oi-arrow-thick-right" title="icon name" aria-hidden="true"></span> -->
+				<h2 class="mt-5">歡迎使用24HR網路投保平台</h2>
 				<div style="float: left; margin-left: 2%;">
 					<span class="oi oi-cart" aria-hidden="true"
 						style="font-size: 15px;"></span><font style="font-weight: bold;">保險商品</font>
@@ -110,14 +83,13 @@ body {
 								<div class="card-header product-header">
 								<span class="oi oi-globe" aria-hidden="true"></span>旅遊平安險</div>
 								<div class="card-block product">
-									<h4 class="card-title">Special title treatment</h4>
-									<p class="card-text">With supporting text below as a
-										natural lead-in to additional content.</p>
+									<h4 class="card-title">出遊的加值保障</h4>
+									<p class="card-text">手續簡便，快速投保，在享受假期時無後顧之憂</p>
 									<a href="calculate_tour.jsp" class="btn btn-info">
 										<span class="oi oi-calculator" aria-hidden="true"></span>試算保費
 									</a>
 									<a href="applyTour.jsp" class="btn btn-success">
-										<span class="oi oi-calculator" aria-hidden="true"></span>前往投保
+										<span class="oi oi-credit-card" aria-hidden="true"></span>前往投保
 									</a>
 								</div>
 							</div>
@@ -127,14 +99,13 @@ body {
 								<div class="card-header product-header">
 								<span class="oi oi-people" aria-hidden="true"></span>定期壽險</div>
 								<div class="card-block product">
-									<h4 class="card-title">Special title treatment</h4>
-									<p class="card-text">With supporting text below as a
-										natural lead-in to additional content.</p>
+									<h4 class="card-title">守護家庭責任的後盾</h4>
+									<p class="card-text">彈性計畫的安排，滿足人生不同階段的需求</p>
 									<a href="calculate_life.jsp" class="btn btn-info">
 										<span class="oi oi-calculator" aria-hidden="true"></span>試算保費
 									</a>
 									<a href="applyLife.jsp" class="btn btn-success">
-										<span class="oi oi-calculator" aria-hidden="true"></span>前往投保
+										<span class="oi oi-credit-card" aria-hidden="true"></span>前往投保
 									</a>
 								</div>
 							</div>
@@ -144,14 +115,13 @@ body {
 								<div class="card-header product-header">
 								<span class="oi oi-fire" aria-hidden="true"></span>意外傷害險</div>
 								<div class="card-block product">
-									<h4 class="card-title">Special title treatment</h4>
-									<p class="card-text">With supporting text below as a
-										natural lead-in to additional content.</p>
+									<h4 class="card-title">大眾的平民保險</h4>
+									<p class="card-text">以低保費獲得高額的保障，補償人身損失</p>
 									<a href="calculate_accident.jsp" class="btn btn-info">
 										<span class="oi oi-calculator" aria-hidden="true"></span>試算保費
 									</a>
 									<a href="applyAccident.jsp" class="btn btn-success">
-										<span class="oi oi-calculator" aria-hidden="true"></span>前往投保
+										<span class="oi oi-credit-card" aria-hidden="true"></span>前往投保
 									</a>
 								</div>
 							</div>

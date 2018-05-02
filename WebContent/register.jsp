@@ -17,42 +17,8 @@
 <link href="open-iconic/font/css/open-iconic-bootstrap.css"
 	rel="stylesheet">
 
-<!-- Custom styles for this template -->
-<style>
-body {
-	padding-top: 54px;
-}
-
-@media ( min-width : 992px) {
-	body {
-		padding-top: 56px;
-	}
-}
-
-#form-group-top {
-	padding-top: 5%;
-}
-
-#checkIDResult, #checkPassResult {
-	color: red;
-	font-size: 14px;
-}
-
-.form {
-	padding-left: 5%;
-	padding-right: 5%;
-	text-align: left;
-}
-
-.window {
-	margin: auto;
-}
-
-.form-header {
-	color: white;
-	background-color: #6495ED;
-}
-</style>
+<!-- Custom styles for this project -->
+<link href="vendor/bootstrap/css/ins.css" rel="stylesheet">
 
 </head>
 
@@ -75,8 +41,11 @@ body {
 					<li class="nav-item"><a class="nav-link" href="calculate.jsp">
 							<span class="oi oi-calculator" aria-hidden="true"></span>試算保費
 					</a></li>
+					<li class="nav-item"><a class="nav-link" href="apply.jsp">
+					<span class="oi oi-cart" aria-hidden="true"></span>保險商品</a>
+					</li>
 					<li class="nav-item"><a class="nav-link" href="member.jsp">
-							<span class="oi oi-file" aria-hidden="true"></span>保戶園地
+							<span class="oi oi-person" aria-hidden="true"></span>保戶園地
 					</a></li>
 					<li class="nav-item"><a class="nav-link" href="register.jsp">
 							<span class="oi oi-tag" aria-hidden="true"></span>註冊會員
@@ -133,7 +102,6 @@ body {
 																onmouseover="return Validate()"> <span
 																id="checkPassResult"></span>
 														</div>
-
 													</div>
 
 													<div class="form-row">

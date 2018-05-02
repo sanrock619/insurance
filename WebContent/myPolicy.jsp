@@ -20,34 +20,9 @@
 <link href="open-iconic/font/css/open-iconic-bootstrap.css"
 	rel="stylesheet">
 
-<!-- Custom styles for this template -->
-<style>
-body {
-	padding-top: 54px;
-}
-
-@media ( min-width : 992px) {
-	body {
-		padding-top: 56px;
-	}
-}
-
-#table {
-	border: 2px solid;
-}
-
-th {
-	background-color: #87CEFA;
-}
-
-td {
-	background-color: #AFEEEE;
-}
-
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover {
-	background-color: #ADD8E6;
-}
-</style>
+<!-- Custom styles for this project -->
+<link href="vendor/bootstrap/css/ins.css" rel="stylesheet">
+<link href="vendor/bootstrap/css/table.css" rel="stylesheet">
 
 </head>
 
@@ -69,8 +44,11 @@ td {
 					<li class="nav-item"><a class="nav-link" href="calculate.jsp">
 							<span class="oi oi-calculator" aria-hidden="true"></span>試算保費
 					</a></li>
+					<li class="nav-item"><a class="nav-link" href="apply.jsp">
+					<span class="oi oi-cart" aria-hidden="true"></span>保險商品</a>
+					</li>
 					<li class="nav-item active"><a class="nav-link"
-						href="member.jsp"> <span class="oi oi-file" aria-hidden="true"></span>保戶園地
+						href="member.jsp"> <span class="oi oi-person" aria-hidden="true"></span>保戶園地
 					</a></li>
 					<li class="nav-item"><a class="nav-link" href="register.jsp">
 							<span class="oi oi-tag" aria-hidden="true"></span>註冊會員

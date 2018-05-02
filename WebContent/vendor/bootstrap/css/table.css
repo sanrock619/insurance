@@ -1,0 +1,15 @@
+tbody {
+	border: 2px solid;
+}
+
+th {
+	background-color: #87CEFA;
+}
+
+td {
+	background-color: #AFEEEE;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover {
+	background-color: #ADD8E6;
+}

@@ -17,6 +17,9 @@ if(month<10){
 	month="0"+month;
 }
 var date = d1.getDate();
+if(date<10){
+	date="0"+date;
+}
 
 var endYear = d2.getFullYear();
 var endMonth = d2.getMonth()+1;

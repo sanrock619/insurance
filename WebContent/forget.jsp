@@ -13,29 +13,11 @@
 
 <!-- Bootstrap core CSS -->
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- open-iconic css -->
+<link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 
-<!-- Custom styles for this template -->
-<style>
-body {
-	padding-top: 54px;
-}
-
-@media ( min-width : 992px) {
-	body {
-		padding-top: 56px;
-	}
-}
-
-#form-group {
-	padding-left: 20%;
-	padding-right: 20%;
-}
-
-#submit {
-	padding-left: 20%;
-	text-align: left;
-}
-</style>
+<!-- Custom styles for this project -->
+<link href="vendor/bootstrap/css/ins.css" rel="stylesheet">
 
 </head>
 
@@ -52,17 +34,23 @@ body {
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a class="nav-link"
-						href="index.jsp">首頁 <span class="sr-only">(current)</span>
+					<li class="nav-item active"><a class="nav-link" href="index.jsp">
+					<span class="oi oi-home" aria-hidden="true"></span>首頁
 					</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">商品查詢</a></li>
-					<li class="nav-item"><a class="nav-link" href="calculate.jsp">試算保費</a>
+					<li class="nav-item"><a class="nav-link" href="calculate.jsp">
+					<span class="oi oi-calculator" aria-hidden="true"></span>試算保費</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="member.jsp">保戶園地</a>
+					<li class="nav-item"><a class="nav-link" href="apply.jsp">
+					<span class="oi oi-cart" aria-hidden="true"></span>保險商品</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="register.jsp">註冊會員</a>
+					<li class="nav-item"><a class="nav-link" href="member.jsp">
+					<span class="oi oi-person" aria-hidden="true"></span>保戶園地</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="login.jsp">登入會員</a>
+					<li class="nav-item"><a class="nav-link" href="register.jsp">
+					<span class="oi oi-tag" aria-hidden="true"></span>註冊會員</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="login.jsp">
+					<span class="oi oi-account-login" aria-hidden="true"></span>登入會員</a>
 					</li>
 				</ul>
 			</div>
@@ -75,24 +63,59 @@ body {
 			<!-- Page Content -->
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12 text-center">
-						<h5 class="mt-5">請輸入會員帳號及註冊時所留之Email</h5>
-						<p class="lead">系統將發送新的密碼至您的Email</p>
-						<form action="MemberServlet" method="post">
-							<input type="hidden" name="request_type" value="forget">
-							<div class="form-group" id="form-group">
-								<label>帳號</label> <input type="text" class="form-control"
-									name="id" placeholder="請輸入帳號" required> <label
-									for="exampleInputPassword1">Email</label> <input type="email"
-									class="form-control" name="email" placeholder="請輸入Email"
-									required>
-							</div>
-							<div id="submit">
-								<button type="submit" class="btn btn-primary">確定送出</button>
-							</div>
-						</form>
+					<div class="col-lg-6" style="margin: auto;">
+						<h5 class="mt-5 text-center">請輸入以下資料，系統將發送新的密碼</h5>
+						<div class="card">
+							<div class="card-header form-header text-center">Email驗證</div>
+							<form action="MemberServlet" method="post" class="form">
+								<input type="hidden" name="request_type" value="forget">
+								<div class="form-group">
+									<label style="text-align: left">帳號</label> <input type="text"
+										class="form-control" name="id" placeholder="請輸入身分證字號" required>
+									<label for="exampleInputPassword1">Email</label> <input
+										type="email" class="form-control" name="email"
+										placeholder="請輸入註冊會員時所留的Email" required>
+								</div>
+								<div id="submit">
+									<button type="submit" class="btn btn-success">確定送出</button>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
+				<footer class="pt-4 my-md-5 pt-md-5 border-top container-fluid">
+					<div class="row">
+						<div class="col-12 col-md">
+							<span class="oi oi-cloud" aria-hidden="true"></span> <small
+								class="d-block mb-3 text-muted">&copy; 雲端保險股份有限公司</small>
+						</div>
+						<div class="col-6 col-md">
+							<ul class="list-unstyled text-small">
+								<li><a class="text-muted yyy" href="#"><span
+										class="oi oi-bullhorn" aria-hidden="true"></span>法令公告</a></li>
+								<li><a class="text-muted" href="#"><span
+										class="oi oi-document" aria-hidden="true"></span>隱私權聲明</a></li>
+								<li><a class="text-muted" href="#"><span
+										class="oi oi-eye" aria-hidden="true"></span>資訊公開</a></li>
+								<li><a class="text-muted" href="#"><span
+										class="oi oi-lock-locked" aria-hidden="true"></span>電子商務自律規範</a></li>
+							</ul>
+						</div>
+						<div class="col-6 col-md">
+							<ul class="list-unstyled text-small">
+								<li><a class="text-muted" href="#"><span
+										class="oi oi-question-mark" aria-hidden="true"></span>常見問題</a></li>
+								<li><a class="text-muted" href="#"><span
+										class="oi oi-location" aria-hidden="true"></span>服務據點</a></li>
+								<li><a class="text-muted" href="#"><span
+										class="oi oi-phone" aria-hidden="true"></span>網路投保服務專線
+										0800-000-000</a></li>
+								<li><a class="text-muted" href="#"><span
+										class="oi oi-map-marker" aria-hidden="true"></span>台北市大安區敦化南路十段000號1樓</a></li>
+							</ul>
+						</div>
+					</div>
+				</footer>
 			</div>
 
 		</c:when>

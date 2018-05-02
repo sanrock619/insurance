@@ -20,26 +20,8 @@
 <link href="open-iconic/font/css/open-iconic-bootstrap.css"
 	rel="stylesheet">
 
-<!-- Custom styles for this template -->
-<style>
-body {
-	padding-top: 54px;
-}
-
-@media ( min-width : 992px) {
-	body {
-		padding-top: 56px;
-	}
-}
-
-.product {
-	padding-bottom: 5%;
-}
-
-.panelHeader{
-	background-color: #ADD8E6;
-}
-</style>
+<!-- Custom styles for this project -->
+<link href="vendor/bootstrap/css/ins.css" rel="stylesheet">
 
 </head>
 
@@ -61,8 +43,11 @@ body {
 					<li class="nav-item"><a class="nav-link" href="calculate.jsp">
 					<span class="oi oi-calculator" aria-hidden="true"></span>試算保費</a>
 					</li>
+					<li class="nav-item"><a class="nav-link" href="apply.jsp">
+					<span class="oi oi-cart" aria-hidden="true"></span>保險商品</a>
+					</li>
 					<li class="nav-item active"><a class="nav-link" href="member.jsp">
-					<span class="oi oi-file" aria-hidden="true"></span>保戶園地</a>
+					<span class="oi oi-person" aria-hidden="true"></span>保戶園地</a>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="register.jsp">
 					<span class="oi oi-tag" aria-hidden="true"></span>註冊會員</a>
@@ -89,32 +74,42 @@ body {
 
 				<div style="float: left; margin-left: 2%;">
 					<span class="oi oi-person" aria-hidden="true"
-						style="font-size: 15px;"></span><font style="font-weight: bold;">保戶資料</font>
+						style="font-size: 15px;"></span><font style="font-weight: bold;">保戶專區</font>
 				</div>
 				<br> <br>
 
 				<div class="container text-center">
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-sm-4">
 							<div class="card text-center">
 								<div class="card-header panelHeader">我的保單</div>
 								<div class="card-block product">
-									<h4 class="card-title">Special title treatment</h4>
-									<p class="card-text">With supporting text below as a
-										natural lead-in to additional content.</p>
+									<h4 class="card-title">查詢保單明細狀況</h4>
+									<p class="card-text">提供線上查詢會員本人目前有效保單的詳細資訊</p>
 									<a href="myPolicy.jsp" class="btn btn-primary"> <span
-										class="oi oi-zoom-in" aria-hidden="true"></span>查詢保單
+										class="oi oi-magnifying-glass" aria-hidden="true"></span>查詢保單
 									</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-sm-4">
+							<div class="card text-center">
+								<div class="card-header panelHeader">保險商品</div>
+								<div class="card-block product">
+									<h4 class="card-title">線上投保</h4>
+									<p class="card-text">目前提供旅遊平安險定期壽險以及意外傷害險線上投保的服務</p>
+									<a href="apply.jsp" class="btn btn-info"> <span
+										class="oi oi-cart" aria-hidden="true"></span>我要投保
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
 							<div class="card text-center">
 								<div class="card-header panelHeader">個人資料</div>
 								<div class="card-block product">
-									<h4 class="card-title">Special title treatment</h4>
-									<p class="card-text">With supporting text below as a
-										natural lead-in to additional content.</p>
+									<h4 class="card-title">修改會員資料</h4>
+									<p class="card-text">提供會員聯絡資訊的變更(如電話及Email)</p>
 									<a href="edit.jsp" class="btn btn-warning"> <span
 										class="oi oi-pencil" aria-hidden="true"></span>修改資料
 									</a>

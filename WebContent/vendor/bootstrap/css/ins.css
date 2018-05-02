@@ -1,0 +1,61 @@
+body {
+	padding-top: 54px;
+}
+
+@media ( min-width : 992px) {
+	body {
+		padding-top: 56px;
+	}
+}
+
+.product {
+	padding-bottom: 5%;
+}
+
+.product-header{
+	color:white;
+	background-color: #4682B4;
+}
+
+/* apply,caclculate */
+.form {
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: left;
+}
+
+.window {
+	margin: auto;
+}
+
+.apply-header,.form-header{
+	color:white;
+	background-color: #6495ED;
+}
+
+/* register */
+#checkIDResult, #checkPassResult {
+	color: red;
+	font-size: 14px;
+}
+
+/* member */
+.panelHeader{
+	background-color: #ADD8E6;
+}
+
+/* apply product */
+.applylist{
+	color:white;
+	background-color: #4169E1;
+}
+
+/* preview */
+.tablenavO {
+	background-color: #87CEFA;
+}
+
+.tablenavE {
+	background-color: #ADD8E6;
+}

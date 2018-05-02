@@ -27,7 +27,7 @@
 	<!-- Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
 		<div class="container">
-			<a class="navbar-brand" href="index.jsp">網路投保專區-試算保費</a>
+			<a class="navbar-brand" href="index.jsp">網路投保專區-保險商品</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarResponsive" aria-controls="navbarResponsive"
 				aria-expanded="false" aria-label="Toggle navigation">
@@ -38,11 +38,11 @@
 					<li class="nav-item"><a class="nav-link" href="index.jsp">
 							<span class="oi oi-home" aria-hidden="true"></span>首頁
 					</a></li>
-					<li class="nav-item active"><a class="nav-link"
+					<li class="nav-item"><a class="nav-link"
 						href="calculate.jsp"> <span class="oi oi-calculator"
 							aria-hidden="true"></span>試算保費
 					</a></li>
-					<li class="nav-item"><a class="nav-link" href="apply.jsp">
+					<li class="nav-item active"><a class="nav-link" href="apply.jsp">
 					<span class="oi oi-cart" aria-hidden="true"></span>保險商品</a>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="member.jsp">
@@ -72,7 +72,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<h5 class="mt-5">請選擇您想試算的保險商品</h5>
+				<h5 class="mt-5">請選擇您有興趣的保險商品</h5>
 				<div style="float: left; margin-left: 2%;">
 					<span class="oi oi-cart" aria-hidden="true"
 						style="font-size: 15px;"></span><font style="font-weight: bold;">保險商品</font>
@@ -83,42 +83,42 @@
 					<div class="row">
 						<div class="col-sm">
 							<div class="card text-center">
-								<div class="card-header product-header">
+								<div class="card-header applylist">
 									<span class="oi oi-globe" aria-hidden="true"></span>旅遊平安險
 								</div>
 								<div class="card-block product">
 									<h4 class="card-title">出遊的加值保障</h4>
 									<p class="card-text">手續簡便，快速投保，在享受假期時無後顧之憂</p>
-									<a href="calculate_tour.jsp" class="btn btn-info"> <span
-										class="oi oi-calculator" aria-hidden="true"></span>前往試算
+									<a href="applyTour.jsp" class="btn btn-info"> <span
+										class="oi oi-credit-card" aria-hidden="true"></span>前往投保
 									</a>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm">
 							<div class="card text-center">
-								<div class="card-header product-header">
+								<div class="card-header applylist">
 									<span class="oi oi-people" aria-hidden="true"></span>定期壽險
 								</div>
 								<div class="card-block product">
 									<h4 class="card-title">守護家庭責任的後盾</h4>
 									<p class="card-text">彈性計畫的安排，滿足人生不同階段的需求</p>
-									<a href="calculate_life.jsp" class="btn btn-info"> <span
-										class="oi oi-calculator" aria-hidden="true"></span>前往試算
+									<a href="applyLife.jsp" class="btn btn-info"> <span
+										class="oi oi-credit-card" aria-hidden="true"></span>前往投保
 									</a>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm">
 							<div class="card text-center">
-								<div class="card-header product-header">
+								<div class="card-header applylist">
 									<span class="oi oi-fire" aria-hidden="true"></span>意外傷害險
 								</div>
 								<div class="card-block product">
 									<h4 class="card-title">大眾的平民保險</h4>
 									<p class="card-text">以低保費獲得高額的保障，補償人身損失</p>
-									<a href="calculate_accident.jsp" class="btn btn-info"> <span
-										class="oi oi-calculator" aria-hidden="true"></span>前往試算
+									<a href="applyAccident.jsp" class="btn btn-info"> <span
+										class="oi oi-credit-card" aria-hidden="true"></span>前往投保
 									</a>
 								</div>
 							</div>
@@ -126,32 +126,41 @@
 					</div>
 				</div>
 				<br>
-				
+
 			</div>
 			<footer class="pt-4 my-md-5 pt-md-5 border-top container-fluid">
-			<div class="row">
-				<div class="col-12 col-md">
-					<span class="oi oi-cloud" aria-hidden="true"></span> <small
-						class="d-block mb-3 text-muted">&copy; 雲端保險股份有限公司</small>
+				<div class="row">
+					<div class="col-12 col-md">
+						<span class="oi oi-cloud" aria-hidden="true"></span> <small
+							class="d-block mb-3 text-muted">&copy; 雲端保險股份有限公司</small>
+					</div>
+					<div class="col-6 col-md">
+						<ul class="list-unstyled text-small">
+							<li><a class="text-muted yyy" href="#"><span
+									class="oi oi-bullhorn" aria-hidden="true"></span>法令公告</a></li>
+							<li><a class="text-muted" href="#"><span
+									class="oi oi-document" aria-hidden="true"></span>隱私權聲明</a></li>
+							<li><a class="text-muted" href="#"><span
+									class="oi oi-eye" aria-hidden="true"></span>資訊公開</a></li>
+							<li><a class="text-muted" href="#"><span
+									class="oi oi-lock-locked" aria-hidden="true"></span>電子商務自律規範</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-md">
+						<ul class="list-unstyled text-small">
+							<li><a class="text-muted" href="#"><span
+									class="oi oi-question-mark" aria-hidden="true"></span>常見問題</a></li>
+							<li><a class="text-muted" href="#"><span
+									class="oi oi-location" aria-hidden="true"></span>服務據點</a></li>
+							<li><a class="text-muted" href="#"><span
+									class="oi oi-phone" aria-hidden="true"></span>網路投保服務專線
+									0800-000-000</a></li>
+							<li><a class="text-muted" href="#"><span
+									class="oi oi-map-marker" aria-hidden="true"></span>台北市大安區敦化南路十段000號1樓</a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="col-6 col-md">
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted yyy" href="#"><span class="oi oi-bullhorn" aria-hidden="true"></span>法令公告</a></li>
-						<li><a class="text-muted" href="#"><span class="oi oi-document" aria-hidden="true"></span>隱私權聲明</a></li>
-						<li><a class="text-muted" href="#"><span class="oi oi-eye" aria-hidden="true"></span>資訊公開</a></li>
-						<li><a class="text-muted" href="#"><span class="oi oi-lock-locked" aria-hidden="true"></span>電子商務自律規範</a></li>
-					</ul>
-				</div>
-				<div class="col-6 col-md">
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="#"><span class="oi oi-question-mark" aria-hidden="true"></span>常見問題</a></li>
-						<li><a class="text-muted" href="#"><span class="oi oi-location" aria-hidden="true"></span>服務據點</a></li>
-						<li><a class="text-muted" href="#"><span class="oi oi-phone" aria-hidden="true"></span>網路投保服務專線 0800-000-000</a></li>
-						<li><a class="text-muted" href="#"><span class="oi oi-map-marker" aria-hidden="true"></span>台北市大安區敦化南路十段000號1樓</a></li>
-					</ul>
-				</div>
-			</div>
-		</footer>
+			</footer>
 		</div>
 	</div>
 

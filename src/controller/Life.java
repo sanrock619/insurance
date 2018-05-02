@@ -10,9 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import java.time.LocalDate;
-import static java.time.temporal.ChronoUnit.DAYS;
-
 import beans.Member;
 import beans.PolicyLife;
 import model.policy.PolicyNumber;
@@ -177,7 +174,7 @@ public class Life extends HttpServlet {
 		policyLife.setGender(gender);
 		policyLife.setAges(ages);
 		policyLife.setId(ident);
-		policyLife.setInsAmount(insAmount);
+		policyLife.setInsAmount(insAmount*10);
 		policyLife.setPeriod(period);
 		policyLife.setYears(years);
 		policyLife.setPremium(premium);

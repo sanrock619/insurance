@@ -21,35 +21,8 @@
 <link href="open-iconic/font/css/open-iconic-bootstrap.css"
 	rel="stylesheet">
 
-<!-- Custom styles for this template -->
-<style>
-body {
-	padding-top: 54px;
-}
-
-@media ( min-width : 992px) {
-	body {
-		padding-top: 56px;
-	}
-}
-
-.form {
-	padding-top: 5%;
-	padding-left: 5%;
-	padding-right: 5%;
-	text-align: left;
-}
-
-.window {
-	margin: auto;
-}
-.tablenavO{
-background-color:#87CEFA;
-}
-.tablenavE{
-background-color:#ADD8E6;
-}
-</style>
+<!-- Custom styles for this project -->
+<link href="vendor/bootstrap/css/ins.css" rel="stylesheet">
 
 </head>
 
@@ -72,8 +45,11 @@ background-color:#ADD8E6;
 					<li class="nav-item"><a class="nav-link" href="calculate.jsp">
 					<span class="oi oi-calculator" aria-hidden="true"></span>試算保費</a>
 					</li>
+					<li class="nav-item"><a class="nav-link" href="apply.jsp">
+					<span class="oi oi-cart" aria-hidden="true"></span>保險商品</a>
+					</li>
 					<li class="nav-item active"><a class="nav-link" href="member.jsp">
-					<span class="oi oi-file" aria-hidden="true"></span>保戶園地</a>
+					<span class="oi oi-person" aria-hidden="true"></span>保戶園地</a>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="register.jsp">
 					<span class="oi oi-tag" aria-hidden="true"></span>註冊會員</a>

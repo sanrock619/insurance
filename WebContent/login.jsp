@@ -17,39 +17,8 @@
 <link href="open-iconic/font/css/open-iconic-bootstrap.css"
 	rel="stylesheet">
 
-<!-- Custom styles for this template -->
-<style>
-body {
-	padding-top: 54px;
-}
-
-@media ( min-width : 992px) {
-	body {
-		padding-top: 56px;
-	}
-}
-
-#form-group {
-	padding-top: 54px;
-	padding-left: 20%;
-	padding-right: 20%;
-}
-
-.form {
-	padding-left: 5%;
-	padding-right: 5%;
-	text-align: left;
-}
-
-.window {
-	margin: auto;
-}
-
-.form-header {
-	color: white;
-	background-color: #6495ED;
-}
-</style>
+<!-- Custom styles for this project -->
+<link href="vendor/bootstrap/css/ins.css" rel="stylesheet">
 
 </head>
 
@@ -73,8 +42,11 @@ body {
 							<span class="oi oi-calculator" aria-hidden="true"></span>試算保費
 					</a></li>
 					<li class="nav-item"><a class="nav-link" href="member.jsp">
-							<span class="oi oi-file" aria-hidden="true"></span>保戶園地
+							<span class="oi oi-person" aria-hidden="true"></span>保戶園地
 					</a></li>
+					<li class="nav-item"><a class="nav-link" href="apply.jsp">
+					<span class="oi oi-cart" aria-hidden="true"></span>保險商品</a>
+					</li>
 					<li class="nav-item"><a class="nav-link" href="register.jsp">
 							<span class="oi oi-tag" aria-hidden="true"></span>註冊會員
 					</a></li>
@@ -95,7 +67,7 @@ body {
 					<div class="col-lg-12 text-center">
 						<div class="container" style="margin-top: 5%">
 							<div class="row">
-								<div class="col-sm-8 window">
+								<div class="col-sm-6 window">
 									<div class="card text-center">
 										<div class="card-header form-header">登入會員</div>
 										<div class="card-block">
