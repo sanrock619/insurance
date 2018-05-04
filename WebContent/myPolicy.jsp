@@ -50,9 +50,6 @@
 					<li class="nav-item active"><a class="nav-link"
 						href="member.jsp"> <span class="oi oi-person" aria-hidden="true"></span>保戶園地
 					</a></li>
-					<li class="nav-item"><a class="nav-link" href="register.jsp">
-							<span class="oi oi-tag" aria-hidden="true"></span>註冊會員
-					</a></li>
 					<li class="nav-item"><a class="nav-link" href="logout.jsp">
 							<span class="oi oi-account-logout" aria-hidden="true"></span>登出會員
 					</a></li>
@@ -131,7 +128,7 @@
 												<td><div>${policy.policyName}</div> <a
 													href="myPolicyDetail.jsp?table=policy_tour&policyNumber=${policy.policyNumber}">${policy.policyNumber}</a></td>
 												<td>${policy.insAmount}萬元</td>
-												<td>${policy.period.substring(21, 33)}</td>
+												<td>${policy.period.substring(20, 32)}</td>
 												<td>${policy.premium}元</td>
 											</tr>
 										</tbody>
@@ -166,7 +163,7 @@
 												<td><div>${policy.policyName}</div> <a
 													href="myPolicyDetail.jsp?table=policy_accident&policyNumber=${policy.policyNumber}">${policy.policyNumber}</a></td>
 												<td>${policy.insAmount}萬元</td>
-												<td>${policy.period.substring(20, 32)}</td>
+												<td>${policy.period.substring(19, 32)}</td>
 												<td>${policy.premium}元</td>
 											</tr>
 										</tbody>

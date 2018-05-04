@@ -149,8 +149,30 @@ public class Life extends HttpServlet {
 		int month = Integer.parseInt(new java.text.SimpleDateFormat("MM").format(new java.util.Date()));
 		int date = Integer.parseInt(new java.text.SimpleDateFormat("dd").format(new java.util.Date()));
 		int rocYear = adYear - 1911;
-		String period = "自民國" + rocYear + "年" + month + "月" + (date + 1) + "日0時起 至 民國" + (rocYear + years) + "年" + month
-				+ "月" + date + "日24時止";
+		
+		String monthString = "";
+		if(month<10) {
+			monthString = "0" + Integer.toString(month);
+		}else {
+			monthString = Integer.toString(month);
+		}
+		
+		String dateString1 = "";
+		if((date+1)<10) {
+			dateString1 = "0" + Integer.toString(date+1);
+		}else {
+			dateString1 = Integer.toString(date+1);
+		}
+		
+		String dateString2 = "";
+		if(date<10) {
+			dateString2 = "0" + Integer.toString(date);
+		}else {
+			dateString2 = Integer.toString(date);
+		}
+		
+		String period = "自民國" + rocYear + "年" + monthString + "月" + dateString1 + "日00時起 至 民國" + (rocYear + years) + "年" + monthString
+				+ "月" + dateString2 + "日24時止";
 
 		// 保費
 		LifeCalculator lifeCalculator = new LifeCalculator();

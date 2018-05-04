@@ -110,14 +110,23 @@ public class Tour extends HttpServlet {
 
 		// 保險期間
 		int rocYear1 = Integer.parseInt(start_date.substring(0, 4)) - 1911;
-		int month1 = Integer.parseInt(start_date.substring(5, 7));
-		int date1 = Integer.parseInt(start_date.substring(8, 10));
+//		int month1 = Integer.parseInt(start_date.substring(5, 7));
+//		int date1 = Integer.parseInt(start_date.substring(8, 10));
+		
+		String month1 = start_date.substring(5, 7);
+		String date1 = start_date.substring(8, 10);
 
 		int rocYear2 = Integer.parseInt(end_date.substring(0, 4)) - 1911;
-		int month2 = Integer.parseInt(end_date.substring(5, 7));
-		int date2 = Integer.parseInt(end_date.substring(8, 10));
-
+//		int month2 = Integer.parseInt(end_date.substring(5, 7));
+//		int date2 = Integer.parseInt(end_date.substring(8, 10));
+		
+		String month2 = end_date.substring(5, 7);
+		String date2 = end_date.substring(8, 10);
+		
 		String time = goTime.substring(0, 2);
+
+
+		
 		String period = "自民國" + rocYear1 + "年" + month1 + "月" + (date1) + "日" + time + "時起 至 民國" + (rocYear2) + "年"
 				+ month2 + "月" + date2 + "日" + time + "時止";
 

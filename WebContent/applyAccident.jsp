@@ -50,9 +50,6 @@
 					<li class="nav-item"><a class="nav-link"
 						href="member.jsp"> <span class="oi oi-person" aria-hidden="true"></span>保戶園地
 					</a></li>
-					<li class="nav-item"><a class="nav-link" href="register.jsp">
-							<span class="oi oi-tag" aria-hidden="true"></span>註冊會員
-					</a></li>
 					<li class="nav-item"><a class="nav-link" href="logout.jsp">
 							<span class="oi oi-account-logout" aria-hidden="true"></span>登出會員
 					</a></li>
@@ -69,7 +66,6 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 text-center">
-
 						<div class="container" style="margin-top: 5%">
 							<div class="row">
 								<div class="col-sm-8 window">
@@ -184,6 +180,43 @@
 														</button>
 													</div>
 												</div>
+												<div class="alert alert-primary text-center" role="alert">
+											<a href="#" class="alert-link" data-toggle="modal"
+												data-target="#warning"> <span style="color: red">*</span>關於職業類別
+											</a>
+										</div>
+
+										<!-- 職業類別Modal -->
+										<div class="modal fade" id="warning" tabindex="-1"
+											role="dialog" aria-labelledby="exampleModalCenterTitle"
+											aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered"
+												role="document">
+												<div class="modal-content">
+													<div class="modal-header"
+														style="background-color: #00BFFF; color: white;">
+														<h5 class="modal-title">職業類別說明</h5>
+														<button type="button" class="close" data-dismiss="modal"
+															aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body" style="background-color: #EEE8AA">
+														本商品僅適用於職業類別：<br>第一類(一般內勤)及第二類(一般外勤)<br>若您從事下列職業則無法投保本商品，請您見諒
+														<br> <br>
+														<div style="font-weight: bold">
+															採石爆破人員<br>海上作業潛水人員<br>船體切割人員(海上)<br>潛水工作人員(潛水工程人員)<br>
+															爆破工作人員(爆破工程人員)<br>爆破工<br>硫酸、鹽酸、硝酸製造工、有毒物品製造工<br>特技演員<br>保鑣<br>
+															電力高壓電工程設施人員<br>職業潛水夫<br>防爆小組<br>武器或彈藥製造人員<br>
+														</div>
+													</div>
+													<div class="modal-footer" style="background-color: #AFEEEE">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">關閉</button>
+													</div>
+												</div>
+											</div>
+										</div>
 											</form>
 										</div>
 

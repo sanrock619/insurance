@@ -41,12 +41,12 @@
 					<li class="nav-item"><a class="nav-link" href="calculate.jsp">
 							<span class="oi oi-calculator" aria-hidden="true"></span>試算保費
 					</a></li>
-					<li class="nav-item"><a class="nav-link" href="member.jsp">
-							<span class="oi oi-person" aria-hidden="true"></span>保戶園地
-					</a></li>
 					<li class="nav-item"><a class="nav-link" href="apply.jsp">
 					<span class="oi oi-cart" aria-hidden="true"></span>保險商品</a>
 					</li>
+					<li class="nav-item"><a class="nav-link" href="member.jsp">
+							<span class="oi oi-person" aria-hidden="true"></span>保戶園地
+					</a></li>
 					<li class="nav-item"><a class="nav-link" href="register.jsp">
 							<span class="oi oi-tag" aria-hidden="true"></span>註冊會員
 					</a></li>

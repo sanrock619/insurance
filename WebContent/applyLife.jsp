@@ -50,9 +50,6 @@
 					<li class="nav-item"><a class="nav-link" href="member.jsp">
 					<span class="oi oi-person" aria-hidden="true"></span>保戶園地</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="register.jsp">
-					<span class="oi oi-tag" aria-hidden="true"></span>註冊會員</a>
-					</li>
 					<li class="nav-item"><a class="nav-link" href="logout.jsp">
 					<span class="oi oi-account-logout" aria-hidden="true"></span>登出會員</a>
 					</li>

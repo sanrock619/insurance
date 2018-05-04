@@ -29,7 +29,7 @@
 
 </head>
 
-<body onload="selectTime(),setDefaultDate(),setBackTime(),sendInfo()">
+<body onload="selectTime(),setDefaultDate(),setBackTime(),calculateTour()">
 
 	<!-- Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
@@ -54,9 +54,11 @@
 					<li class="nav-item"><a class="nav-link" href="member.jsp">
 					<span class="oi oi-person" aria-hidden="true"></span>保戶園地</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="register.jsp">
-					<span class="oi oi-tag" aria-hidden="true"></span>註冊會員</a>
-					</li>
+					<c:if test="${member.id==null }">
+						<li class="nav-item"><a class="nav-link" href="register.jsp">
+								<span class="oi oi-tag" aria-hidden="true"></span>註冊會員
+						</a></li>
+					</c:if>
 					<c:choose>
 						<c:when test="${member.id==null }">
 							<li class="nav-item"><a class="nav-link" href="login.jsp">
@@ -200,7 +202,7 @@
 											</label>
 											<div class="form-group col-md-4">
 												<select class="form-control" id="insAmount" name="insAmount"
-													onchange="sendInfo()">
+													onchange="calculateTour()">
 													<option value=100 selected>100萬</option>
 													<option value=200>200萬</option>
 													<option value=300>300萬</option>
@@ -216,7 +218,7 @@
 										</div>
 										<div class="form-group row">
 											<div class="col-sm text-center">
-												<button class="btn btn-info" id="cal" onclick="sendInfo()">
+												<button class="btn btn-info" id="cal" onclick="calculateTour()">
 													<span class="oi oi-calculator" aria-hidden="true"></span>試算保費
 												</button>
 											</div>

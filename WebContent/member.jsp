@@ -49,9 +49,6 @@
 					<li class="nav-item active"><a class="nav-link" href="member.jsp">
 					<span class="oi oi-person" aria-hidden="true"></span>保戶園地</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="register.jsp">
-					<span class="oi oi-tag" aria-hidden="true"></span>註冊會員</a>
-					</li>
 					<li class="nav-item"><a class="nav-link" href="logout.jsp">
 					<span class="oi oi-account-logout" aria-hidden="true"></span>登出會員</a>
 					</li>
@@ -84,8 +81,9 @@
 							<div class="card text-center">
 								<div class="card-header panelHeader">我的保單</div>
 								<div class="card-block product">
-									<h4 class="card-title">查詢保單明細狀況</h4>
-									<p class="card-text">提供線上查詢會員本人目前有效保單的詳細資訊</p>
+									<h5 class="card-title">查詢保單明細狀況</h5>
+									<p class="card-text">提供線上查詢會員本人</p>
+									<p class="card-text">目前有效保單的詳細資訊</p>
 									<a href="myPolicy.jsp" class="btn btn-primary"> <span
 										class="oi oi-magnifying-glass" aria-hidden="true"></span>查詢保單
 									</a>
@@ -96,8 +94,9 @@
 							<div class="card text-center">
 								<div class="card-header panelHeader">保險商品</div>
 								<div class="card-block product">
-									<h4 class="card-title">線上投保</h4>
-									<p class="card-text">目前提供旅遊平安險定期壽險以及意外傷害險線上投保的服務</p>
+									<h5 class="card-title">線上投保</h5>
+									<p class="card-text">目前提供旅遊平安險、定期壽險</p>
+									<p class="card-text">以及意外傷害險線上投保的服務</p>
 									<a href="apply.jsp" class="btn btn-info"> <span
 										class="oi oi-cart" aria-hidden="true"></span>我要投保
 									</a>
@@ -108,8 +107,9 @@
 							<div class="card text-center">
 								<div class="card-header panelHeader">個人資料</div>
 								<div class="card-block product">
-									<h4 class="card-title">修改會員資料</h4>
-									<p class="card-text">提供會員聯絡資訊的變更(如電話及Email)</p>
+									<h5 class="card-title">修改會員資料</h5>
+									<p class="card-text">提供會員相關資訊的變更</p>
+									<p class="card-text">(聯絡方式及密碼)</p>
 									<a href="edit.jsp" class="btn btn-warning"> <span
 										class="oi oi-pencil" aria-hidden="true"></span>修改資料
 									</a>

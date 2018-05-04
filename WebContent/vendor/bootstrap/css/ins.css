@@ -34,6 +34,10 @@ body {
 	background-color: #6495ED;
 }
 
+.card-title{
+	font-weight: bold;
+}
+
 /* register */
 #checkIDResult, #checkPassResult {
 	color: red;

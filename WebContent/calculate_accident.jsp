@@ -63,9 +63,11 @@
 					<li class="nav-item"><a class="nav-link" href="member.jsp">
 							<span class="oi oi-person" aria-hidden="true"></span>保戶園地
 					</a></li>
-					<li class="nav-item"><a class="nav-link" href="register.jsp">
-							<span class="oi oi-tag" aria-hidden="true"></span>註冊會員
-					</a></li>
+					<c:if test="${member.id==null }">
+						<li class="nav-item"><a class="nav-link" href="register.jsp">
+								<span class="oi oi-tag" aria-hidden="true"></span>註冊會員
+						</a></li>
+					</c:if>
 					<c:choose>
 						<c:when test="${member.id==null }">
 							<li class="nav-item"><a class="nav-link" href="login.jsp">

@@ -1,10 +1,6 @@
 package beans;
 
 import java.io.Serializable;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import javax.naming.Context;
-import javax.sql.DataSource;
 
 
 public class PolicyTour implements Serializable{

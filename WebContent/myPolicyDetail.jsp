@@ -50,9 +50,6 @@
 					<li class="nav-item active"><a class="nav-link"
 						href="member.jsp"> <span class="oi oi-person" aria-hidden="true"></span>保戶園地
 					</a></li>
-					<li class="nav-item"><a class="nav-link" href="register.jsp">
-							<span class="oi oi-tag" aria-hidden="true"></span>註冊會員
-					</a></li>
 					<li class="nav-item"><a class="nav-link" href="logout.jsp">
 							<span class="oi oi-account-logout" aria-hidden="true"></span>登出會員
 					</a></li>
@@ -108,7 +105,7 @@
 										<th scope="row">繳別</th>
 										<td>年繳</td>
 										<th scope="row">契約開始日</th>
-										<td>${policy.period.substring(3, 12)}</td>
+										<td>${policy.period.substring(3, 13)}</td>
 									</tr>
 									<tr>
 										<th scope="row">繳法</th>
@@ -118,14 +115,7 @@
 									</tr>
 									<tr>
 										<th scope="row">保障結束日</th>
-										<td><c:if test="${param.table.equals('policy_life')}">
-											${policy.period.substring(20, 29)}
-											</c:if> <c:if test="${param.table.equals('policy_tour')}">
-										${policy.period.substring(21, 30)}
-											</c:if>
-											<c:if test="${param.table.equals('policy_accident')}">
-										${policy.period.substring(20, 29)}
-											</c:if></td>
+										<td>${policy.period.substring(20, 32)}</td>
 										<th scope="row">繳費期滿日</th>
 										<td><c:if test="${param.table.equals('policy_life')}">
 											${policy.period.substring(20, 29)}

@@ -38,19 +38,20 @@
 					<li class="nav-item"><a class="nav-link" href="index.jsp">
 							<span class="oi oi-home" aria-hidden="true"></span>首頁
 					</a></li>
-					<li class="nav-item"><a class="nav-link"
-						href="calculate.jsp"> <span class="oi oi-calculator"
-							aria-hidden="true"></span>試算保費
+					<li class="nav-item"><a class="nav-link" href="calculate.jsp">
+							<span class="oi oi-calculator" aria-hidden="true"></span>試算保費
 					</a></li>
-					<li class="nav-item active"><a class="nav-link" href="apply.jsp">
-					<span class="oi oi-cart" aria-hidden="true"></span>保險商品</a>
-					</li>
+					<li class="nav-item active"><a class="nav-link"
+						href="apply.jsp"> <span class="oi oi-cart" aria-hidden="true"></span>保險商品
+					</a></li>
 					<li class="nav-item"><a class="nav-link" href="member.jsp">
 							<span class="oi oi-person" aria-hidden="true"></span>保戶園地
 					</a></li>
-					<li class="nav-item"><a class="nav-link" href="register.jsp">
-							<span class="oi oi-tag" aria-hidden="true"></span>註冊會員
-					</a></li>
+					<c:if test="${member.id==null }">
+						<li class="nav-item"><a class="nav-link" href="register.jsp">
+								<span class="oi oi-tag" aria-hidden="true"></span>註冊會員
+						</a></li>
+					</c:if>
 					<c:choose>
 						<c:when test="${member.id==null }">
 							<li class="nav-item"><a class="nav-link" href="login.jsp">
@@ -87,8 +88,9 @@
 									<span class="oi oi-globe" aria-hidden="true"></span>旅遊平安險
 								</div>
 								<div class="card-block product">
-									<h4 class="card-title">出遊的加值保障</h4>
-									<p class="card-text">手續簡便，快速投保，在享受假期時無後顧之憂</p>
+									<h5 class="card-title">出遊的加值保障</h5>
+									<p class="card-text">手續簡便、快速投保</p>
+									<p class="card-text">在享受假期時無後顧之憂</p>
 									<a href="applyTour.jsp" class="btn btn-info"> <span
 										class="oi oi-credit-card" aria-hidden="true"></span>前往投保
 									</a>
@@ -101,8 +103,9 @@
 									<span class="oi oi-people" aria-hidden="true"></span>定期壽險
 								</div>
 								<div class="card-block product">
-									<h4 class="card-title">守護家庭責任的後盾</h4>
-									<p class="card-text">彈性計畫的安排，滿足人生不同階段的需求</p>
+									<h5 class="card-title">守護家庭責任的後盾</h5>
+									<p class="card-text">用基本的保障</p>
+									<p class="card-text">滿足人生不同階段的需求</p>
 									<a href="applyLife.jsp" class="btn btn-info"> <span
 										class="oi oi-credit-card" aria-hidden="true"></span>前往投保
 									</a>
@@ -115,8 +118,9 @@
 									<span class="oi oi-fire" aria-hidden="true"></span>意外傷害險
 								</div>
 								<div class="card-block product">
-									<h4 class="card-title">大眾的平民保險</h4>
-									<p class="card-text">以低保費獲得高額的保障，補償人身損失</p>
+									<h5 class="card-title">大眾的平民保險</h5>
+									<p class="card-text">以低保費獲得高額的保障</p>
+									<p class="card-text">補償因意外所產生的損失</p>
 									<a href="applyAccident.jsp" class="btn btn-info"> <span
 										class="oi oi-credit-card" aria-hidden="true"></span>前往投保
 									</a>

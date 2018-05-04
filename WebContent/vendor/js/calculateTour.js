@@ -33,7 +33,6 @@ if(endDate<10){
 
 document.getElementById("start_date").value = year+"-"+month+"-"+date;
 document.getElementById("end_date").value = endYear+"-"+endMonth+"-"+endDate;
-//document.getElementById("end_date").value = document.getElementById("start_date").value;
 }
 
 //當開始日期調整過 檢查結束日期是否比出發日期早 如果有就把結束日期調整為=出發日期
@@ -54,8 +53,7 @@ function setBackTime(){
 }
 
 //查詢保費ajax
-var request;
-function sendInfo() {
+function calculateTour() {
 	var start_date = document.getElementById('start_date').value;
 	var end_date = document.getElementById('end_date').value;
 	var insAmount = document.getElementById('insAmount').value;
@@ -68,7 +66,7 @@ function sendInfo() {
 	}
 
 	try {
-		request.onreadystatechange = getInfo;
+		request.onreadystatechange = calculateTourResult;
 		request.open("GET", url, true);
 		request.send();
 	} catch (e) {
@@ -76,7 +74,7 @@ function sendInfo() {
 	}
 }
 
-function getInfo() {
+function calculateTourResult() {
 	if (request.readyState == 4) {
 		var result = request.responseText;
 		document.getElementById('result').innerHTML = result;
@@ -91,7 +89,7 @@ function checkEndDate(){
 	var end = new Date(end_date);
 	
 	if(end >= start){
-		sendInfo();
+		calculateTour();
 	}
 }
 

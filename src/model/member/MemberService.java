@@ -171,8 +171,9 @@ public class MemberService {
 	public boolean sendMail(String email, String passwd) {
 		boolean result = false;
 
-		final String username = "sanrock619@hotmail.com";
-		final String password = "oscar96510";
+		//這裡填要發送的mail帳號與密碼 目前已拿掉
+		final String username = "";
+		final String password = "";
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true");
 		props.put("mail.smtp.host", "smtp-mail.outlook.com");
