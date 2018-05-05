@@ -130,34 +130,30 @@
 									<tr>
 										<th scope="row">保險費</th>
 										<td>${policy.premium}</td>
-										<c:choose>
-											<c:when test="${policy.auto!=null}">
-												<th scope="row">自動續約</th>
-												<td>${policy.auto}</td>
-											</c:when>
-											<c:otherwise>
-												<th></th>
-												<td></td>
-											</c:otherwise>
-										</c:choose>
+										<th scope="row">身故受益人</th>
+										<td>
+										<c:if test="${!policy.beneficiary1.equals('')}">
+											${policy.beneficiary1}
+										</c:if>
+										<c:if test="${!policy.beneficiary2.equals('')}">
+											${policy.beneficiary2}
+										</c:if>
+										<c:if test="${!policy.beneficiary3.equals('')}">
+											${policy.beneficiary3}
+										</c:if>
+										<c:if test="${!policy.beneficiary4.equals('')}">
+											${policy.beneficiary4}
+										</c:if>
+										</td>
 									</tr>
-								</tbody>
-							</table>
-							身故受益人資料：
-							<table class="table table-hover text-center table-bordered">
-								<tbody>
-									<tr>
-										<th scope="row">順位</th>
-										<th scope="row">姓名</th>
-										<th scope="row">關係</th>
-										<th scope="row">比例</th>
-									</tr>
-									<tr>
-										<td>01</td>
-										<td>--</td>
-										<td>法定繼承人</td>
-										<td>100/100</td>
-									</tr>
+									<c:if test="${policy.auto!=null}">
+										<tr>
+											<th scope="row">自動續約</th>
+											<td>${policy.auto}</td>
+											<th></th>
+											<td></td>
+										</tr>
+									</c:if>
 								</tbody>
 							</table>
 						</c:forEach>

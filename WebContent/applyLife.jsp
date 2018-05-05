@@ -140,11 +140,6 @@
 															id="parents" name="beneficiary4"> <label
 															class="form-check-label" for="parents">父母</label>
 													</div>
-													<!-- 													<div class="form-check col-md-3" style="padding-left: 2%"> -->
-													<!-- 														<input class="big-checkbox" type="checkbox" value="其他直系血親" -->
-													<!-- 															id="other" name="beneficiary4"> <label -->
-													<!-- 															class="form-check-label" for="other">其他直系血親</label> -->
-													<!-- 													</div> -->
 													<!-- 受益人Modal -->
 													<div class="modal fade" id="alert" tabindex="-1"
 														role="dialog" aria-labelledby="exampleModalCenterTitle"
