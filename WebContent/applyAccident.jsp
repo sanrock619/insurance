@@ -9,8 +9,7 @@
 <head>
 
 <meta charset="utf-8">
-<meta name="viewport" http-equiv="Content-Type"
-	content="text/html; charset=UTF-8; width=device-width; initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <title>線上投保</title>
 
@@ -120,11 +119,7 @@
 															id="parents" name="beneficiary4"> <label
 															class="form-check-label" for="parents">父母</label>
 													</div>
-													<!-- 													<div class="form-check col-md-3" style="padding-left: 2%"> -->
-													<!-- 														<input class="big-checkbox" type="checkbox" value="其他直系血親" -->
-													<!-- 															id="other" name="beneficiary4"> <label -->
-													<!-- 															class="form-check-label" for="other">其他直系血親</label> -->
-													<!-- 													</div> -->
+													
 													<!-- 受益人Modal -->
 													<div class="modal fade" id="alert" tabindex="-1"
 														role="dialog" aria-labelledby="exampleModalCenterTitle"

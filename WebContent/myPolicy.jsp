@@ -9,8 +9,7 @@
 <head>
 
 <meta charset="utf-8">
-<meta name="viewport" http-equiv="Content-Type"
-	content="text/html; charset=UTF-8; width=device-width; initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <title>線上投保</title>
 
@@ -73,8 +72,8 @@
 						<c:forEach items="${result.rows }" var="policy">
 							<c:choose>
 								<c:when test="${policy.premium == null || policy.premium ==0}">
-				很抱歉，您目前無有效之保單
-			</c:when>
+									很抱歉，您目前無有效之保單
+								</c:when>
 								<c:otherwise>
 
 									<table class="table table-hover table-bordered text-center">
@@ -108,8 +107,8 @@
 						<c:forEach items="${tourResult.rows }" var="policy">
 							<c:choose>
 								<c:when test="${policy.premium == null || policy.premium ==0}">
-				很抱歉，您目前無有效之保單
-			</c:when>
+									很抱歉，您目前無有效之保單
+								</c:when>
 								<c:otherwise>
 
 									<table class="table table-hover table-bordered text-center">
@@ -143,8 +142,8 @@
 						<c:forEach items="${accidentResult.rows }" var="policy">
 							<c:choose>
 								<c:when test="${policy.premium == null || policy.premium ==0}">
-				很抱歉，您目前無有效之保單
-			</c:when>
+									很抱歉，您目前無有效之保單
+								</c:when>
 								<c:otherwise>
 
 									<table class="table table-hover table-bordered text-center">
