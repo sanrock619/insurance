@@ -9,7 +9,9 @@ public class ConnectionPool {
 		Connection con = null;
 		try {
 			Context ctx = new javax.naming.InitialContext();
+			
 			DataSource ds = (DataSource) ctx.lookup("java:comp/env/jdbc/InsDB");
+			
 			con = ds.getConnection();
 			return con;
 		}catch(Exception e) {
